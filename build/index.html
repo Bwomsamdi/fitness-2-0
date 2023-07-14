@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Фитнес 2.0">
     <title>Фитнес 2.0</title>
     <link rel="preload" href="fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -16,9 +16,270 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="container"></div>
+        <div class="container">
+          <div class="header-wrapper">
+            <nav class="navigation">
+              <a class="navigation__logo" href="index.html">
+                <img src="img/logo.svg" width="122" height="44" alt="Логотип фитнес-центра «Supergym».">
+              </a>
+              <a class="navigation__phone" href="tel:+78005555555">8-800-555-55-55</a>
+            </nav>
+          </div>
+        </div>
       </header>
       <main>
+        <section class="hero">
+          <div class="container">
+            <h1>Фитнес<br>центр</h1>
+            <p>
+              Тренажёрный зал<br>
+              Групповые занятия<br>
+              Кардио-зона
+            </p>
+            <span>Омск</span>
+            <div class="hero__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/decaf-flat-white-mobile.webp 1x, img/decaf-flat-white-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.png 1x, img/decaf-flat-white-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.png 1x, img/decaf-flat-white-tablet@2x.png 2x">
+                <img
+                  src="img/zero-desktop.jpg"
+                  srcset="img/zero-desktop@2x.jpg 2x"
+                  width="500"
+                  height="556"
+                  alt="Лицо тренажерного зала - Супермэн.">
+              </picture>
+            </div>
+            <p><a class="btn" href="#">Купить абонемент</a></p>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <h2>Тренажерный зал</h2>
+            <p>Просторный зал площадью 900 кв/м</p>
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья.
+              Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+            <p>В&nbsp;зале расположены отдельная зона для&nbsp;Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами.
+              Также в&nbsp;фитнес центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.</p>
+            <div class="about__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/decaf-flat-white-mobile.webp 1x, img/decaf-flat-white-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.png 1x, img/decaf-flat-white-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.png 1x, img/decaf-flat-white-tablet@2x.png 2x">
+                <img
+                  src="img/gym-tablet.jpg"
+                  srcset="img/gym-tablet@2x.jpg 2x"
+                  width="660"
+                  height="401"
+                  alt="Общий вид тренажерного зала.">
+              </picture>
+            </div>
+            <div class="about__video-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/production.jpg 1x">
+                <img
+                  src="img/gym-play-desktop.jpg"
+                  srcset="img/gym-play-desktop@2x.jpg 2x"
+                  width="364"
+                  height="228"
+                  alt="Превью видео.">
+              </picture>
+              <video width="364" height="228" controls poster="img/gym-play-desktop.jpg">
+                <source src="#" type="video/mp4">
+                <source src="#" type="video/ogg">
+                <source src="#" type="video/webm">
+              </video>
+            </div>
+          </div>
+        </section>
+        <section class="subscriptions">
+          <div class="container">
+            <h2>Абонементы</h2>
+            <div class="subscriptions__wrapper">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="games">
+          <div class="container">
+            <div class="games__wrapper">
+              <h2>Super<br>Games</h2>
+              <div class="games__data-wrapper">
+                <p>Дата</p>
+                <p>7 <span>Марта 2019</span></p>
+                <p>Время</p>
+                <p>12:00</p>
+              </div>
+              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+              <p><a class="btn" href="#">Заполнить заявку</a></p>
+            </div>
+          </div>
+        </section>
+        <section class="trainers">
+          <div class="container">
+            <h2>Тренеры</h2>
+            <div class="trainers__wrapper">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container">
+            <h2>Наши преимущества</h2>
+            <div class="advantages__wrapper">
+              <ul>
+                <li>
+                  <div class="advantages__count-wrapper">
+                    <p>900</p>
+                    <span>кв/м</span>
+                  </div>
+                  <div class="advantages__text-wrapper">
+                    <h3>Площадь</h3>
+                    <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="advantages__count-wrapper">
+                    <p>70</p>
+                    <span>машин</span>
+                  </div>
+                  <div class="advantages__text-wrapper">
+                    <h3>Собственная парковка</h3>
+                    <p>Вы всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="advantages__count-wrapper">
+                    <p>350</p>
+                    <span>мест</span>
+                  </div>
+                  <div class="advantages__text-wrapper">
+                    <h3>Комфорт</h3>
+                    <p>Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="advantages__count-wrapper">
+                    <p>5+</p>
+                    <span>лет</span>
+                  </div>
+                  <div class="advantages__text-wrapper">
+                    <h3>Тренерский опыт</h3>
+                    <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="advantages__equipments">
+                <span>100</span>
+                <h3>Тренажеров</h3>
+                <p>Современные тренажеры<br>на все группы мышц</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="promo">
+          <div class="container">
+            <h2>Акции</h2>
+            <div class="promo__main-wrapper">
+              <div class="promo__main">
+                <h3>Год</h3>
+                <p>4999</p>
+                <p>Безлимитный абонемент<br>в&nbsp;тренажерный зал</p>
+                <p><a class="promo__link" href="#">Подробнее</a></p>
+              </div>
+              <div class="promo__image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/decaf-flat-white-mobile.webp 1x, img/decaf-flat-white-mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.png 1x, img/decaf-flat-white-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.png 1x, img/decaf-flat-white-tablet@2x.png 2x">
+                  <img
+                    src="img/promo-desktop.jpg"
+                    srcset="img/promo-desktop@2x 2x"
+                    width="280"
+                    height="462"
+                    alt="Промо фото.">
+                </picture>
+              </div>
+            </div>
+            <div class="promo__other-wrapper">
+              <div class="promo__other">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+                <p><a class="promo__link promo__link--other" href="#">Подробнее</a></p>
+              </div>
+              <div class="promo__other">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с&nbsp;командой</p>
+                <p><a class="promo__link promo__link--other" href="#">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="container">
+            <h2>Вопросы и ответы</h2>
+            <div class="trainers__wrapper">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="container">
+            <h2>Отзывы</h2>
+            <div class="trainers__wrapper">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container">
+            <div class="contacts__free-wrapper">
+              <h2>Бесплатное занятие</h2>
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <input type="text" id="name" name="name" placeholder="Имя">
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                <button class="btn" type="submit">Отправить</button>
+              </form>
+            </div>
+            <div class="contacts__wrapper">
+              <h2>Контакты</h2>
+              <div class="contacts__adress">
+                <h3>Адрес:</h3>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+              <div class="contacts__phone">
+                <h3>Телефон:</h3>
+                <p><a href="tel:+78005555555">8-800-555-55-55</a></p>
+                <h3>Email:</h3>
+                <p><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
@@ -30,7 +291,56 @@
         </section>
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="container">
+          <div class="footer">
+            <div class="footer__logo">
+              <a class="logo" href="index.html">
+                <img src="img/logo.svg" width="122" height="44" alt="Логотип фитнес-центра «Supergym».">
+              </a>
+            </div>
+            <div class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Абонементы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Акции</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Тренеры</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Расписание</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__social">
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Страница Supergym ВКонтакте.">
+                    <svg class="social__icon" aria-hidden="true" focusable="false" width="14" height="14">
+                      <use href="img/icons/sprite.svg#vk"></use></svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://t.me/htmlacademy" aria-label="Страница Supergym на Одноклассниках.">
+                    <svg class="social__icon" aria-hidden="true" focusable="false" width="9" height="16">
+                      <use href="img/icons/sprite.svg#ok"></use></svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Страница Supergym на Reddit.">
+                    <svg class="social__icon" aria-hidden="true" focusable="false" width="14" height="14">
+                      <use href="img/icons/sprite.svg#reddit"></use></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
 
