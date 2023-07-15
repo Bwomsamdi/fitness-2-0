@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 14px 54px;
+  padding: 15px 54px;
 
   color: $color-default-white;
   font-family: $ff-roboto;
@@ -36,6 +36,6 @@
   }
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    padding: 14px 31px;
+    padding: 16px 28px 14px 31px;
   }
 }
