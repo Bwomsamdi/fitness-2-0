@@ -1,0 +1,91 @@
+.hero {
+  background: conic-gradient(from 145deg at  16% 39%, #003d85 32deg, #b80027 313deg, #003d85 360deg);
+  margin-top: -51px;
+  padding: 51px 0;
+}
+
+.hero__wrapper {
+  display: flex;
+  position: relative;
+}
+
+.hero__text-wrapper {
+  padding-right: 64px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    padding-right: 30px;
+  }
+}
+
+.hero__text-wrapper h1 {
+  font-family: $ff-alumni;
+  color: $color-default-white;
+  font-size: 92px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 234px 0 0 149px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    top: 137px;
+    font-size: 74px;
+    letter-spacing: 2.6px;
+    margin: 177px 0 0 137px;
+  }
+}
+
+.hero__text-wrapper p {
+  position: absolute;
+  top: 356px;
+  left: 19px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: $color-default-white;
+  text-align: right;
+  margin: 0;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    top: 268px;
+    left: 0;
+  }
+}
+
+.hero__text-wrapper span {
+  position: absolute;
+  top: 168px;
+  left: 263px;
+  font-family: $ff-alumni;
+  color: $color-default-white;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    top: 137px;
+    font-size: 28px;
+    letter-spacing: 1.8px;
+  }
+}
+
+.hero__text-wrapper .btn {
+  margin-top: 48px;
+  margin-left: 164px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    margin-top: 34px;
+    margin-left: 139px;
+  }
+}
+
+.hero__image-wrapper {
+  padding-top: 51px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    padding-top: 82px;
+  }
+}

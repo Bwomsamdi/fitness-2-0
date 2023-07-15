@@ -1,0 +1,49 @@
+.navigation {
+  position: fixed;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  z-index: 10;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    width: 100%;
+    padding-right: 90px;
+  }
+}
+
+.navigation a {
+  display: block;
+}
+
+.navigation__logo {
+  padding-top: 10px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    padding-top: 12px;
+  }
+}
+
+.navigation__logo img {
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    width: 82px;
+    height: 15px;
+  }
+}
+
+.navigation__phone {
+  font-family: $ff-alumni;
+  color: $color-default-white;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.78px;
+  padding-top: 3px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    padding-top: 6px;
+  }
+}
