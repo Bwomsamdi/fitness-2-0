@@ -1,5 +1,6 @@
 .btn {
   display: inline-flex;
+  justify-content: center;
   padding: 15px 54px;
 
   color: $color-default-white;
@@ -36,6 +37,6 @@
   }
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    padding: 16px 28px 14px 31px;
+    padding: 15px 29px 13px 29px;
   }
 }

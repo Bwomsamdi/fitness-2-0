@@ -1,0 +1,137 @@
+.about .container {
+  @media (min-width: 320px) {
+    padding: 0;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 0;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    display: block;
+    text-align: center;
+    padding: 115px 0;
+  }
+
+  @media (min-width: 320px) {
+    display: block;
+    text-align: left;
+    padding: 70px 0;
+  }
+}
+
+.about__text-wrapper {
+  max-width: 500px;
+  padding: 55px 85px 0 60px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    max-width: 502px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: 320px) {
+    margin: 0;
+    padding: 0 15px;
+  }
+}
+
+.about__text-wrapper h2 {
+  font-family: $ff-alumni;
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 2.24px;
+  margin: 0;
+  padding-bottom: 25px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    font-size: 42px;
+    letter-spacing: 1.24px;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: 320px) {
+    font-size: 30px;
+    letter-spacing: 1.75px;
+    padding-bottom: 13px;
+  }
+}
+
+.about__text-wrapper p + p {
+  padding-bottom: 8px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    padding-bottom: 44px;
+  }
+
+  @media (min-width: 320px) {
+    padding-bottom: 34px;
+  }
+}
+
+.about__text-wrapper p {
+  margin: 0;
+
+  &:first-of-type {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-bottom: 38px;
+
+    @media (min-width: $vp-768) and (max-width: 1199px) {
+      padding-bottom: 34px;
+    }
+
+    @media (min-width: 320px) {
+      padding-bottom: 24px;
+    }
+  }
+
+  &:last-of-type {
+    @media (min-width: 320px) and (max-width: 1199px) {
+      @include visually-hidden();
+    }
+  }
+}
+
+.about__image-wrapper {
+  display: block;
+  width: 660px;
+
+  @media (min-width: 320px) and (max-width: 1199px) {
+    width: 100%;
+  }
+
+  @media (min-width: 320px) {
+    padding-bottom: 40px;
+  }
+}
+
+.about__image-wrapper img {
+  @media (min-width: 320px) and (max-width: 1199px) {
+    width: 100%;
+  }
+}
+
+.about__video-wrapper {
+  position: absolute;
+  width: 364px;
+  top: 63%;
+  left: 437px;
+  right: 0;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    width: 266px;
+    margin: auto;
+    left: 0;
+    top: 75%;
+  }
+
+  @media (min-width: 320px) {
+    position: static;
+    width: 100%;
+  }
+}

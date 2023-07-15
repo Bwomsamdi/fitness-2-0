@@ -32,13 +32,13 @@
           <div class="container">
             <div class="hero__wrapper">
               <div class="hero__text-wrapper">
+                <span>Омск</span>
                 <h1>Фитнес<br>центр</h1>
                 <p>
                   Тренажёрный зал<br>
                   Групповые занятия<br>
                   Кардио-зона
                 </p>
-                <span>Омск</span>
                 <a class="btn" href="#">Купить абонемент</a>
               </div>
               <div class="hero__image-wrapper">
@@ -62,28 +62,34 @@
         </section>
         <section class="about">
           <div class="container">
-            <h2>Тренажерный зал</h2>
-            <p>Просторный зал площадью 900 кв/м</p>
-            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья.
-              Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
-            <p>В&nbsp;зале расположены отдельная зона для&nbsp;Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами.
-              Также в&nbsp;фитнес центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.</p>
-            <div class="about__image-wrapper">
+            <div class="about__wrapper">
+              <div class="about__text-wrapper">
+                <h2>Тренажерный зал</h2>
+                <p>Просторный зал площадью 900 кв/м</p>
+                <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья.
+                  Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+                <p>В&nbsp;зале расположены отдельная зона для&nbsp;Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами.
+                  Также в&nbsp;фитнес центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.</p>
+              </div>
+              <div class="about__image-wrapper">
               <picture>
+                <!--
                 <source type="image/webp" media="(min-width: 1366px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/decaf-flat-white-mobile.webp 1x, img/decaf-flat-white-mobile@2x.webp 2x">
-                <source media="(min-width: 1366px)" srcset="img/decaf-flat-white-desktop.png 1x, img/decaf-flat-white-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.png 1x, img/decaf-flat-white-tablet@2x.png 2x">
+                -->
+                <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
                 <img
-                  src="img/gym-tablet.jpg"
-                  srcset="img/gym-tablet@2x.jpg 2x"
+                  src="img/gym-desktop.jpg"
+                  srcset="img/gym-desktop@2x.jpg 2x"
                   width="660"
                   height="401"
                   alt="Общий вид тренажерного зала.">
               </picture>
             </div>
             <div class="about__video-wrapper">
+              <!--
               <picture>
                 <source media="(min-width: 768px)" srcset="img/production.jpg 1x">
                 <img
@@ -93,11 +99,13 @@
                   height="228"
                   alt="Превью видео.">
               </picture>
+              -->
               <video width="364" height="228" controls poster="img/gym-play-desktop.jpg">
                 <source src="#" type="video/mp4">
                 <source src="#" type="video/ogg">
                 <source src="#" type="video/webm">
               </video>
+              </div>
             </div>
           </div>
         </section>

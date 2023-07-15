@@ -1,10 +1,15 @@
 .hero {
-  background: conic-gradient(from 145deg at  16% 39%, #003d85 32deg, #b80027 313deg, #003d85 360deg);
+  background: conic-gradient(from 145deg at  16% 39%, #003d85 32deg, #b80027 300deg, #003d85 360deg);
   margin-top: -63px;
   padding: 63px 0 51px 0;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    padding-bottom: 82px;
+    padding-bottom: 83px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-bottom: 78px;
   }
 }
 
@@ -14,10 +19,16 @@
 }
 
 .hero__text-wrapper {
-  padding-right: 64px;
+  text-align: end;
+  padding: 105px 64px 0 147px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    padding-right: 31px;
+    padding: 78px 33px 0 135px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 74px 0 0 0;
   }
 }
 
@@ -30,14 +41,20 @@
   letter-spacing: 2.8px;
   text-transform: uppercase;
   text-align: right;
-  margin: 172px 0 0 148px;
+  margin: 0;
+  padding-top: 16px;
 
-  @media (min-width: $vp-768) and (max-width: 1199px) {
+  @media (min-width: 320px) and (max-width: 1199px) {
     font-size: 78px;
     letter-spacing: 0;
     line-height: 86px;
     text-transform: none;
-    margin: 119px 0 0 135px;
+    padding-top: 9px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 15px;
+    padding-right: 2px;
   }
 }
 
@@ -56,12 +73,15 @@
     top: 208px;
     left: 0;
   }
+
+  @media (max-width: 767px) {
+    top: 196px;
+    left: 0;
+  }
 }
 
 .hero__text-wrapper span {
-  position: absolute;
-  top: 105px;
-  left: 263px;
+  align-items: flex-end;
   font-family: $ff-alumni;
   color: $color-default-white;
   font-size: 42px;
@@ -69,21 +89,31 @@
   line-height: normal;
   letter-spacing: 1.8px;
   text-transform: uppercase;
+  padding-right: 52px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    top: 78px;
     font-size: 28px;
     letter-spacing: 1.8px;
+    padding-right: 3px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    padding-right: 3px;
   }
 }
 
 .hero__text-wrapper .btn {
   margin-top: 48px;
-  margin-left: 164px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     margin-top: 36px;
-    margin-left: 139px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-top: 24px;
   }
 }
 
@@ -92,5 +122,9 @@
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     margin-top: 22px;
+  }
+
+  @media (max-width: 767px) {
+    @include visually-hidden();
   }
 }
