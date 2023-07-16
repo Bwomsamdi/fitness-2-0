@@ -1,5 +1,5 @@
 .about .container {
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     padding: 0;
   }
 }
@@ -16,7 +16,7 @@
     padding: 115px 0;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     display: block;
     text-align: left;
     padding: 70px 0;
@@ -33,7 +33,7 @@
     padding: 0;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     margin: 0;
     padding: 0 15px;
   }
@@ -53,7 +53,7 @@
     padding-bottom: 12px;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 30px;
     letter-spacing: 1.75px;
     padding-bottom: 13px;
@@ -67,7 +67,7 @@
     padding-bottom: 44px;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     padding-bottom: 34px;
   }
 }
@@ -85,7 +85,7 @@
       padding-bottom: 34px;
     }
 
-    @media (min-width: 320px) {
+    @media (max-width: 767px) {
       padding-bottom: 24px;
     }
   }
@@ -105,7 +105,7 @@
     width: 100%;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     padding-bottom: 40px;
   }
 }
@@ -119,6 +119,7 @@
 .about__video-wrapper {
   position: absolute;
   width: 364px;
+  height: 228px;
   top: 63%;
   left: 437px;
   right: 0;
@@ -130,8 +131,61 @@
     top: 75%;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     position: static;
     width: 100%;
+    height: 0;
+  }
+}
+
+.about__video {
+  width: 364px;
+  height: 228px;
+  background: $color-default-black url("../img/gym-play-desktop.jpg") no-repeat;
+  //position: relative;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    width: 266px;
+    height: 167px;
+    margin: auto;
+    left: 0;
+    top: 75%;
+  }
+
+  @media (max-width: 767px) {
+    background: $color-default-black url("../img/gym-play-mobile.jpg") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 52.5%;
+  }
+}
+
+.about__video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.about__video-button {
+  position: absolute;
+  display: block;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: transparent url("../img/sprite/play.svg") no-repeat;
+  border: none;
+
+  @media (min-width: 320px) and (max-width: 1199px) {
+    width: 73px;
+    height: 73px;
+    background-size: 73px 73px;
+  }
+
+  @media (max-width: 767px) {
+    //top: 60%;
   }
 }
