@@ -1419,51 +1419,52 @@ button,
   }
 }
 
-.about__video-wrapper {
-  position: absolute;
-  width: 364px;
-  height: 228px;
-  top: 63%;
-  left: 437px;
-  right: 0;
+@media (min-width: 1200px) {
+  .about__video-wrapper {
+    position: absolute;
+    background: #102654 url("../img/gym-play-desktop.jpg") no-repeat;
+    background-size: contain;
+    width: 364px;
+    height: 228px;
+    top: 63.5%;
+    left: 437px;
+    right: 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .about__video-wrapper {
+    position: absolute;
     width: 266px;
+    height: 167px;
     margin: auto;
+    right: 0;
     left: 0;
-    top: 75%;
+    top: 74.5%;
+    background: #102654 url("../img/gym-play-tablet.jpg") no-repeat;
   }
 }
 @media (max-width: 767px) {
   .about__video-wrapper {
-    position: static;
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 0;
+    padding-top: 52.3%;
+    background: #102654 url("../img/gym-play-desktop.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
 .about__video {
-  width: 364px;
-  height: 228px;
-  background: #102654 url("../img/gym-play-desktop.jpg") no-repeat;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .about__video {
-    width: 266px;
-    height: 167px;
-    margin: auto;
-    left: 0;
-    top: 75%;
-  }
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 767px) {
   .about__video {
-    background: #102654 url("../img/gym-play-mobile.jpg") no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 0;
-    padding-top: 52.5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -1492,6 +1493,7 @@ button,
     background-size: 73px 73px;
   }
 }
+
 .header-wrapper {
   position: relative;
   max-width: 1366px;
