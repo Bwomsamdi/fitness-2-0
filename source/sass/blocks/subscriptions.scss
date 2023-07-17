@@ -1,0 +1,54 @@
+.subscriptions {
+  position: relative;
+  text-align: center;
+  background-color: #f8f9fc;
+  padding: 140px 0 80px 0;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    padding: 113px 0 61px 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 70px 0 30px 0;
+  }
+}
+
+.subscriptions::after {
+  content: url("../img/weights-desktop.png");
+  position: absolute;
+  bottom: -38px;
+  right: -15px;
+  width: 321px;
+  height: 384px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    content: url("../img/weights-tablet.png");
+    right: 25px;
+    bottom: -66px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.subscriptions h2 {
+  font-family: $ff-alumni;
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: 2.24px;
+  margin: 0;
+  padding-bottom: 37px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    font-size: 40px;
+    letter-spacing: 2.1px;
+    padding-bottom: 34px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 31px;
+    letter-spacing: 1.3px;
+    padding-bottom: 28px;
+  }
+}

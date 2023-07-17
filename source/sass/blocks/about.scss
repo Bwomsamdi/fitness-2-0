@@ -8,12 +8,12 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 120px 0;
+  padding: 120px 0 235px 0;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     display: block;
     text-align: center;
-    padding: 115px 0;
+    padding: 115px 0 182px 0;
   }
 
   @media (max-width: 767px) {
@@ -123,7 +123,7 @@
     background-size: contain;
     width: 364px;
     height: 228px;
-    top: 63.5%;
+    top: 54%;
     left: 437px;
     right: 0;
   }
@@ -135,7 +135,7 @@
     margin: auto;
     right: 0;
     left: 0;
-    top: 74.5%;
+    top: 68.7%;
     background: $color-default-black url("../img/gym-play-tablet.jpg") no-repeat;
   }
 
