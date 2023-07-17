@@ -179,6 +179,7 @@
   height: 100px;
   background: transparent url("../img/sprite/play.svg") no-repeat;
   border: none;
+  cursor: pointer;
 
   @media (min-width: 320px) and (max-width: 1199px) {
     width: 73px;
