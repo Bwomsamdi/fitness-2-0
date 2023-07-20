@@ -1,0 +1,51 @@
+.trainers {
+  padding-bottom: 105px;
+}
+
+.trainers__wrapper {
+  position: relative;
+}
+
+.trainers h2 {
+  font-family: $ff-alumni;
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 2.24px;
+  margin: 0;
+  padding-bottom: 45px;
+}
+
+.trainers__description-wrapper {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 81px 57px 57px 57px;
+  color: $color-default-white;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.trainers__description-wrapper ul {
+  //list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+}
+
+.trainers__description-wrapper span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #b6bdcc;
+}
+
+.trainers__description-wrapper li {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 20px;
+
+  &::marker {
+    font-size: 1.1rem;
+  }
+}
+
