@@ -222,9 +222,9 @@
           <div class="container">
             <h2>Тренеры</h2>
             <div class="trainers__wrapper">
-              <div class="swiper" data-id="swiper">
+              <div class="swiper" data-id="swiper-trainers">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="trainers__slide swiper-slide">
                     <picture>
                       <!--
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
@@ -249,7 +249,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainers__slide swiper-slide">
                     <picture>
                       <!--
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
@@ -274,7 +274,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainers__slide swiper-slide">
                     <picture>
                       <!--
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
@@ -299,7 +299,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainers__slide swiper-slide">
                     <picture>
                       <!--
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
@@ -324,7 +324,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainers__slide swiper-slide">
                     <picture>
                       <!--
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
@@ -349,7 +349,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainers__slide swiper-slide">
                     <picture>
                       <!--
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
@@ -374,7 +374,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainers__slide swiper-slide">
                     <picture>
                       <!--
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
@@ -399,7 +399,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainers__slide swiper-slide">
                     <picture>
                       <!--
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
@@ -425,11 +425,10 @@
                     </div>
                   </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
-
           </div>
         </section>
         <section class="advantages">
@@ -547,12 +546,79 @@
         <section class="reviews">
           <div class="container">
             <h2>Отзывы</h2>
-            <div class="trainers__wrapper">
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
+            <div class="reviews__wrapper">
+              <div class="swiper" data-id="swiper-reviews">
+                <div class="swiper-wrapper">
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__description">
+                      <div class="reviews__image-wrapper">
+                        <picture>
+                          <!--
+                          <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
+                          <source type="image/webp" srcset="img/decaf-flat-white-mobile.webp 1x, img/decaf-flat-white-mobile@2x.webp 2x">
+                          <source media="(max-width: 1199px)" srcset="img/zero-tablet.jpg 1x, img/zero-tablet@2x.jpg 2x">
+                          -->
+                          <img
+                            src="img/review.jpg"
+                            srcset="img/review@2x.jpg.jpg 2x"
+                            width="80"
+                            height="80"
+                            alt="Аватар клиента.">
+                        </picture>
+                      </div>
+                      <h3>Анна Орлова</h3>
+                      <p>«Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__description">
+                      <div class="reviews__image-wrapper">
+                        <picture>
+                          <!--
+                          <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
+                          <source type="image/webp" srcset="img/decaf-flat-white-mobile.webp 1x, img/decaf-flat-white-mobile@2x.webp 2x">
+                          <source media="(max-width: 1199px)" srcset="img/zero-tablet.jpg 1x, img/zero-tablet@2x.jpg 2x">
+                          -->
+                          <img
+                            src="img/review.jpg"
+                            srcset="img/review@2x.jpg.jpg 2x"
+                            width="80"
+                            height="80"
+                            alt="Аватар клиента.">
+                        </picture>
+                      </div>
+                      <h3>Анна Орлова</h3>
+                      <p>«Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__description">
+                      <div class="reviews__image-wrapper">
+                        <picture>
+                          <!--
+                          <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
+                          <source type="image/webp" srcset="img/decaf-flat-white-mobile.webp 1x, img/decaf-flat-white-mobile@2x.webp 2x">
+                          <source media="(max-width: 1199px)" srcset="img/zero-tablet.jpg 1x, img/zero-tablet@2x.jpg 2x">
+                          -->
+                          <img
+                            src="img/review.jpg"
+                            srcset="img/review@2x.jpg.jpg 2x"
+                            width="80"
+                            height="80"
+                            alt="Аватар клиента.">
+                        </picture>
+                      </div>
+                      <h3>Анна Орлова</h3>
+                      <p>«Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
             </div>
           </div>
         </section>

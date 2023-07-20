@@ -4,6 +4,10 @@
 
 .trainers__wrapper {
   position: relative;
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 36px;
+  }
 }
 
 .trainers h2 {
@@ -13,20 +17,41 @@
   letter-spacing: 2.24px;
   margin: 0;
   padding-bottom: 45px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1.26px;
+    padding-bottom: 31px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    padding-bottom: 42px;
+  }
 }
 
 .trainers__description-wrapper {
   display: none;
   position: absolute;
-  width: 100%;
+  width: 260px;
   height: 100%;
   padding: 81px 57px 57px 57px;
   color: $color-default-white;
   background-color: rgba(16, 38, 84, 0.89);
+
+  @media screen and (max-width: 1199px) {
+    width: 268px;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 48px 34px;
+  }
 }
 
 .trainers__description-wrapper ul {
-  //list-style: none;
   margin: 0;
   padding: 0;
   margin-top: 35px;
@@ -49,3 +74,31 @@
   }
 }
 
+.trainers__slide h3 {
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.trainers__slide:hover h3 {
+  top: 40px;
+  z-index: 10;
+}
+
+.trainers__slide:hover .trainers__description-wrapper {
+  display: block;
+}
+
+.trainers__slide img {
+  @media screen and (max-width: 1199px) {
+    width: 268px;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 226px;
+    height: 274px;
+  }
+}
