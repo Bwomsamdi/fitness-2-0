@@ -1,0 +1,48 @@
+.accordion {
+  transition: all ease-out 0.2s;
+  color: #102654;
+
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element {
+    width: 100%;
+    padding: 31px 0;
+    border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+
+    &:first-child {
+      border-top: 1px solid rgba(28, 51, 116, 0.20);
+    }
+  }
+
+  &__element.is-active > &__button span {
+    background-color: #1c3374;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 10px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    padding: 14px 0 0 0;
+  }
+}

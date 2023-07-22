@@ -1,5 +1,14 @@
 .tabs {
   max-width: 100%;
+
+  &--questions {
+    display: flex;
+    column-gap: 40px;
+
+    @media screen and (max-width: 1199px) {
+      display: block;
+    }
+  }
 }
 
 .tabs__controls {
@@ -21,6 +30,28 @@
     width: 100%;
     margin-bottom: 34px;
     padding-bottom: 12px;
+  }
+
+  &--questions {
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 10px;
+    width: auto;
+    margin: 0;
+    border: none;
+
+    @media screen and (max-width: 1199px) {
+      flex-direction: row;
+      column-gap: 10px;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      column-gap: 0;
+      justify-content: space-between;
+      padding-bottom: 30px;
+    }
   }
 }
 
@@ -49,12 +80,29 @@
       bottom: -14px;
     }
   }
+
+  &--questions {
+    opacity: 1;
+
+    &.is-active {
+      color: #ffffff;
+      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      border-color: transparent;
+    }
+  }
+
+  &--questions.is-active::before {
+    display: none;
+  }
 }
 
 .tabs__content {
   margin-bottom: 40px;
-
   transition: height 0.3s;
+
+  &--questions {
+    width: 100%;
+  }
 }
 
 .tabs__element {
@@ -124,6 +172,17 @@
   padding-bottom: 11px;
 }
 
+.tabs__element--questions p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  padding-bottom: 0;
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
 .tabs__element span {
   display: block;
   font-size: 100px;
@@ -173,6 +232,11 @@
   @media screen and (max-width: 767px) {
     margin-top: 30px;
   }
+}
+
+.tabs__element--questions .btn {
+  max-width: 100%;
+  margin: 0;
 }
 
 .tabs--unset .tabs__content {
