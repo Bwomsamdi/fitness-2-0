@@ -95,6 +95,19 @@
   text-underline-position: under;
   color: $color-default-white;
   margin: auto 0 0 0;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    text-decoration: none;
+  }
 }
 
 .promo__other-wrapper {
@@ -156,6 +169,19 @@
   text-decoration: underline;
   text-underline-position: under;
   margin: auto 0 0 0;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    text-decoration: none;
+  }
 }
 
 .promo__image img {
