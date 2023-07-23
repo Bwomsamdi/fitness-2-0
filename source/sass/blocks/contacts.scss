@@ -1,10 +1,5 @@
-.contacts {
-  //background-color: $color-default-black;
-}
-
 .contacts .container {
   max-width: 100%;
-  //margin: 0;
   padding: 0;
 }
 
@@ -71,6 +66,8 @@
 
 .contacts__free-container input {
   width: 190px;
+  font-size: 14px;
+  color: $color-default-white;
   border: none;
   border-bottom: 1px solid #74819c;
   background-color: transparent;
@@ -114,6 +111,10 @@
   }
 }
 
+.contacts__free-container form {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .contacts__text-wrapper {
   width: 50%;

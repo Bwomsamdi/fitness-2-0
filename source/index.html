@@ -775,11 +775,15 @@
           <div class="container">
             <div class="contacts__wrapper">
               <div class="contacts__free-wrapper">
-                <div class="contacts__free-container">
+                <div class="contacts__free-container" data-form-validate="data-form-validate" data-callback="base">
                   <h2>Бесплатное занятие</h2>
                   <form action="https://echo.htmlacademy.ru/" method="post">
-                    <input type="text" id="name" name="name" placeholder="Имя" required>
-                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения" data-required="data-required">
+                      <input type="text" id="user-name-1" name="user-name-1" placeholder="Имя" required>
+                    </div>
+                    <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения" data-message-success="Поле заполнено верно" data-required="data-required">
+                      <input type="tel" id="user-phone" name="user-phone" placeholder="Телефон" required>
+                    </div>
                     <button class="btn" type="submit">Отправить</button>
                   </form>
                 </div>
