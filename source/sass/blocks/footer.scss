@@ -54,6 +54,20 @@
   font-weight: 400;
   line-height: 1;
   color: $color-default-white;
+  padding: 5px 10px;
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  @include hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+  }
 
   @media (max-width: 767px) {
     font-size: 16px;

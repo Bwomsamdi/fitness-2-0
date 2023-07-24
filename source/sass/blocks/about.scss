@@ -181,6 +181,20 @@
   border: none;
   cursor: pointer;
 
+  &:disabled {
+    background: transparent url("../img/sprite/play-hover.svg") no-repeat;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    background: transparent url("../img/sprite/play-hover.svg") no-repeat;
+  }
+
+  @include active {
+    background: transparent url("../img/sprite/play-hover.svg") no-repeat;
+  }
+
   @media (min-width: 320px) and (max-width: 1199px) {
     width: 73px;
     height: 73px;

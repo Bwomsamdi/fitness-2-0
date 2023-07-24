@@ -15,6 +15,21 @@
   background-color: $color-default-white;
   border-radius: 50%;
   padding-top: 2.5px;
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    background-color: #103aae;
+    fill: $color-default-white;
+  }
+
+  @include active {
+    background-color: $color-default-black;
+    fill: $color-default-white;
+  }
 }
 
 .social__item {

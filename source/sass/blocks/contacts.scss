@@ -81,6 +81,23 @@
     }
   }
 
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  @include hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  @include active {
+    outline: 1px solid $color-default-white;
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+  }
+
   @media screen and (max-width: 1199px) {
     width: 206px;
   }
