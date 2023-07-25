@@ -13,8 +13,9 @@
 
 .tabs__controls {
   display: flex;
-  justify-content: space-between;
-  width: 341px;
+  column-gap: 46px;
+  justify-content: center;
+  width: max-content;
   margin: 0 auto;
   margin-bottom: 40px;
   padding-bottom: 11px;
@@ -22,11 +23,14 @@
 
   @media screen and (max-width: 1199px) {
     width: 49.2%;
+    column-gap: 53px;
     margin-bottom: 44px;
   }
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 0;
     width: 100%;
     margin-bottom: 34px;
     padding-bottom: 12px;
@@ -43,14 +47,15 @@
     @media screen and (max-width: 1199px) {
       flex-direction: row;
       column-gap: 10px;
-      padding-bottom: 40px;
+      padding-bottom: 39px;
     }
 
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
       column-gap: 0;
+      row-gap: 8px;
       justify-content: space-between;
-      padding-bottom: 30px;
+      padding-bottom: 29px;
     }
   }
 }
@@ -86,7 +91,7 @@
 
     &.is-active {
       color: #ffffff;
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       border-color: transparent;
     }
   }
@@ -102,6 +107,10 @@
 
   &--questions {
     width: 100%;
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -118,7 +127,7 @@
   margin: 0;
   padding: 0;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1365px) {
     flex-direction: column;
     align-items: center;
   }
@@ -140,7 +149,7 @@
     border-style: solid;
   }
 
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @media (min-width: 768px) and (max-width: 1365px) {
     width: 442px;
     padding-top: 56px;
   }

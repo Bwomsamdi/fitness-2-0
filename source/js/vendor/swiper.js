@@ -10178,18 +10178,18 @@ const swiper = () => {
 
   const swiperBlock = new Swiper('[data-id="swiper-trainers"]', {
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 3.8,
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1
+        slidesPerView: 'auto'
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 2
+        slidesPerView: 1.9
       },
       1200: {
-        slidesPerView: 4
+        slidesPerView: 3.8
       }
     },
     navigation: {
@@ -10200,6 +10200,7 @@ const swiper = () => {
 
   const swiperBlock2 = new Swiper('[data-id="swiper-reviews"]', {
     slidesPerView: 1,
+    slidesPerColumn: 1,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

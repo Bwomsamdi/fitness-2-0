@@ -119,7 +119,7 @@
 .about__video-wrapper {
   @media (min-width: 1200px) {
     position: absolute;
-    background: $color-default-black url("../img/gym-play-desktop.jpg") no-repeat;
+    background: $color-default-black url("../img/gym-play-desktop.webp") no-repeat;
     background-size: contain;
     width: 364px;
     height: 228px;
@@ -136,7 +136,7 @@
     right: 0;
     left: 0;
     top: 68.7%;
-    background: $color-default-black url("../img/gym-play-tablet.jpg") no-repeat;
+    background: $color-default-black url("../img/gym-play-tablet.webp") no-repeat;
   }
 
   @media (max-width: 767px) {
@@ -144,7 +144,7 @@
     overflow: hidden;
     width: 100%;
     padding-top: 52.3%;
-    background: $color-default-black url("../img/gym-play-desktop.jpg") no-repeat;
+    background: $color-default-black url("../img/gym-play-desktop.webp") no-repeat;
     background-size: cover;
   }
 }
@@ -185,14 +185,32 @@
     background: transparent url("../img/sprite/play-hover.svg") no-repeat;
     opacity: 0.4;
     pointer-events: none;
+
+    @media (min-width: 320px) and (max-width: 1199px) {
+      width: 73px;
+      height: 73px;
+      background-size: 73px 73px;
+    }
   }
 
   @include hover-focus {
     background: transparent url("../img/sprite/play-hover.svg") no-repeat;
+
+    @media (min-width: 320px) and (max-width: 1199px) {
+      width: 73px;
+      height: 73px;
+      background-size: 73px 73px;
+    }
   }
 
   @include active {
     background: transparent url("../img/sprite/play-hover.svg") no-repeat;
+
+    @media (min-width: 320px) and (max-width: 1199px) {
+      width: 73px;
+      height: 73px;
+      background-size: 73px 73px;
+    }
   }
 
   @media (min-width: 320px) and (max-width: 1199px) {

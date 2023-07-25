@@ -93,10 +93,11 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 1;
+    letter-spacing: 0.2px;
     text-transform: none;
     color: $color-default-black;
-    border: 1px solid rgba(16, 38, 84, 0.20);
-    padding: 18px;
+    border: 1px solid rgba(16, 38, 84, 0.2);
+    padding: 17px;
 
     @include hover-focus {
       color: $color-default-black;
@@ -106,7 +107,7 @@
 
     @media screen and (max-width: 767px) {
       font-size: 16px;
-      padding: 14px;
+      padding: 13px 14px;
       width: auto;
       min-width: 141px;
     }

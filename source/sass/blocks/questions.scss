@@ -1,35 +1,35 @@
 .questions {
-  padding: 120px 0;
+  padding: 140px 0 35px 0;
   background-color: #f8f9fc;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    padding: 100px 0;
+    padding: 115px 0 4px 0;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 70px 0;
+    padding: 77px 0 0 0;
   }
 }
 
 .questions h2 {
   font-family: $ff-alumni;
-  font-size: 46px;
+  font-size: 54px;
   font-weight: 600;
-  letter-spacing: 2.24px;
+  letter-spacing: 1.6px;
   margin: 0;
-  padding-bottom: 39px;
+  padding-bottom: 60px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     text-align: center;
     font-size: 42px;
-    letter-spacing: 1.24px;
-    padding-bottom: 40px;
+    letter-spacing: 1.26px;
+    padding-bottom: 53px;
   }
 
   @media (max-width: 767px) {
     text-align: center;
     font-size: 30px;
     letter-spacing: 1.75px;
-    padding-bottom: 30px;
+    padding-bottom: 37px;
   }
 }

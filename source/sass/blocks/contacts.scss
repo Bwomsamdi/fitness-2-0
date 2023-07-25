@@ -13,39 +13,41 @@
 
 .contacts__free-wrapper {
   width: 50%;
-  padding: 56px 0 70px 0;
+  padding: 70px 0;
   color: $color-default-white;
   background-color: $color-default-black;
 
   @media screen and (max-width: 1199px) {
     width: 100%;
-    padding: 70px 45px;
+    padding: 66px 45px 70px 45px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 70px 15px;
+    padding: 68px 15px;
   }
 }
 
 .contacts__free-wrapper h2 {
   font-family: $ff-alumni;
-  font-size: 50px;
+  font-size: 54px;
   font-weight: 800;
   line-height: 1;
-  letter-spacing: 1.62px;
+  letter-spacing: 1.6px;
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 29px;
 
   @media screen and (max-width: 1199px) {
     font-size: 42px;
     font-weight: 700;
     letter-spacing: 1.26px;
+    padding-bottom: 31px;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 0.96px;
+    padding-bottom: 32px;
   }
 }
 
@@ -71,13 +73,13 @@
   border: none;
   border-bottom: 1px solid #74819c;
   background-color: transparent;
-  padding: 10px 0;
+  padding: 10px 0 6px 0;
 
   &:first-of-type {
     margin-right: 30px;
 
     @media screen and (max-width: 1199px) {
-      margin-right: 56px;
+      margin-right: 60px;
     }
   }
 
@@ -116,43 +118,51 @@
 .contacts__free-container .btn {
   display: block;
   width: 410px;
-  margin-top: 30px;
+  margin-top: 29px;
+  padding-top: 16px;
+  letter-spacing: 1.6px;
 
   @media screen and (max-width: 1199px) {
     width: 472px;
+    margin-top: 31px;
   }
 
   @media screen and (max-width: 767px) {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 12px;
   }
 }
 
 .contacts__free-container form {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    row-gap: 27px;
+  }
 }
 
 .contacts__text-wrapper {
   width: 50%;
   background-color: $color-default-white;
   border-top: 1px solid #74819c;
-  padding-top: 56px;
+  padding-top: 62px;
   padding-left: 120px;
 
   @media screen and (max-width: 1199px) {
     width: 100%;
-    padding: 70px 45px 70px 133px;
+    padding: 66px 45px 42px 133px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 70px 15px;
+    padding: 67px 15px 42px 15px;
   }
 }
 
 .contacts__text-wrapper h2 {
   font-family: $ff-alumni;
-  font-size: 50px;
+  font-size: 54px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: 1.62px;
@@ -163,16 +173,23 @@
     font-size: 42px;
     font-weight: 600;
     letter-spacing: 1.26px;
+    padding-bottom: 38px;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 32px;
     letter-spacing: 0.96px;
+    padding-bottom: 40px;
   }
 }
 
 .contacts__text-container {
   display: flex;
+  padding-left: 4px;
+
+  @media screen and (max-width: 1199px) {
+    padding-left: 0;
+  }
 
   @media screen and (max-width: 767px) {
     display: block;
@@ -182,11 +199,11 @@
 .contacts__text-container h3 {
   font-size: 16px;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 3px;
 
   @media screen and (max-width: 1199px) {
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 
@@ -195,11 +212,11 @@
   font-weight: 400;
   line-height: 152.34%;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 18px;
 
   @media screen and (max-width: 1199px) {
     font-size: 18px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
 }
 
@@ -210,20 +227,24 @@
   @media screen and (max-width: 1199px) {
     margin-right: 96px;
   }
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+  }
 }
 
 .contacts__adress::after {
   content: "";
   position: absolute;
   display: block;
-  top: 0;
-  right: -60px;
+  top: 5px;
+  right: -62px;
   width: 1px;
   height: 102px;
   background-color: #74819c;
 
   @media screen and (max-width: 1199px) {
-    right: -48px;
+    right: -50px;
     height: 129px;
   }
 

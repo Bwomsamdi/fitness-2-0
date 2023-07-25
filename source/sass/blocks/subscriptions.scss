@@ -3,10 +3,9 @@
   text-align: center;
   background-color: #f8f9fc;
   padding: 140px 0 80px 0;
-  overflow: hidden;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    padding: 113px 0 61px 0;
+    padding: 113px 0 67px 0;
   }
 
   @media screen and (max-width: 767px) {
@@ -17,14 +16,14 @@
 .subscriptions::after {
   content: url("../img/weights-desktop.png");
   position: absolute;
-  bottom: -38px;
-  right: -15px;
-  width: 321px;
+  bottom: -40px;
+  right: 0;
+  width: 290px;
   height: 384px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     content: url("../img/weights-tablet.png");
-    right: 25px;
+    right: 60px;
     bottom: -66px;
   }
 
@@ -35,9 +34,9 @@
 
 .subscriptions h2 {
   font-family: $ff-alumni;
-  font-size: 52px;
+  font-size: 54px;
   font-weight: 600;
-  letter-spacing: 2.24px;
+  letter-spacing: 1.6px;
   margin: 0;
   padding-bottom: 37px;
 
