@@ -31,7 +31,8 @@
   font-family: "Alumni Sans";
 
   font-display: swap;
-  src: url("../fonts/alumni-sans-600.woff2") format("woff2");
+  src: url("../fonts/alumni-sans-600.woff2") format("woff2"),
+    url("../../fonts/alumni-sans-600.woff") format("woff");
 }
 
 @font-face {
@@ -40,7 +41,8 @@
   font-family: "Alumni Sans";
 
   font-display: swap;
-  src: url("../fonts/alumni-sans-800.woff2") format("woff2");
+  src: url("../fonts/alumni-sans-800.woff2") format("woff2"),
+    url("../../fonts/alumni-sans-800.woff") format("woff");
 }
 
 @font-face {
