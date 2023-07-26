@@ -139,13 +139,13 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 139%;
-  padding-left: 7px;
+  margin-left: -2px;
   margin-bottom: 24px;
 
   @media screen and (max-width: 1199px) {
     font-size: 10px;
     line-height: 128%;
-    padding-left: 0;
+    margin-left: 0;
     margin-bottom: 8px;
   }
 }

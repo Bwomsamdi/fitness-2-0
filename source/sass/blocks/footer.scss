@@ -21,7 +21,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 23px;
+  gap: 22px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     gap: 15px;
@@ -44,8 +44,9 @@
 
 .footer__link {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
+  letter-spacing: 150%;
   color: $color-default-white;
   padding: 5px 10px;
 
@@ -62,7 +63,7 @@
     outline: 1px solid $color-default-white;
   }
 
-  @media screen and (max-width: 11997px) {
+  @media screen and (max-width: 1199px) {
     font-size: 13px;
   }
 
@@ -73,7 +74,7 @@
 }
 
 .footer__logo {
-  margin-right: 20px;
+  margin-right: 8px;
   padding-top: 10px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {

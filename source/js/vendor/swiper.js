@@ -10189,7 +10189,7 @@ const swiper = () => {
         slidesPerView: 1.9
       },
       1200: {
-        slidesPerView: 3.8
+        slidesPerView: 3.87
       }
     },
     navigation: {
