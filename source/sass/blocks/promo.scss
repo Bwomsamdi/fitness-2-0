@@ -168,7 +168,7 @@
 .promo__other {
   display: flex;
   flex-direction: column;
-  height: 50%;
+  min-height: 211px;
   border-image: linear-gradient(120deg, #d10a42, #00359f) 30;
   border-width: 7px;
   border-style: solid;
@@ -176,7 +176,7 @@
 
   @media screen and (max-width: 1199px) {
     width: 47.7%;
-    height: 211px;
+    min-height: 211px;
   }
 
   @media screen and (max-width: 767px) {

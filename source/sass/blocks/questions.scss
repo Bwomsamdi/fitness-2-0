@@ -3,7 +3,7 @@
   background-color: #f8f9fc;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    padding: 115px 0 10px 0;
+    padding: 115px 0 0 0;
   }
 
   @media screen and (max-width: 767px) {
@@ -31,5 +31,23 @@
     font-size: 30px;
     letter-spacing: 1.75px;
     padding-bottom: 37px;
+  }
+}
+
+.questions__wrapper .tabs__control {
+  @include hover-focus {
+    color: $color-default-black;
+    border-color: $color-default-black;
+    background-color: transparent;
+  }
+
+  @include focus {
+    outline: none;
+  }
+}
+
+.questions__wrapper .is-active {
+  @include hover-focus {
+    color: $color-default-white;
   }
 }
