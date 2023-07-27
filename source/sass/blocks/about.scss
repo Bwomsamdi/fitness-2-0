@@ -123,7 +123,7 @@
     background-size: contain;
     width: 364px;
     height: 228px;
-    top: 54%;
+    top: 408px;
     left: 437px;
     right: 0;
   }
@@ -135,7 +135,8 @@
     margin: auto;
     right: 0;
     left: 0;
-    top: 68.7%;
+    top: auto;
+    bottom: 100px;
     background: $color-default-black url("../img/gym-play-tablet.webp") no-repeat;
   }
 
@@ -144,8 +145,7 @@
     overflow: hidden;
     width: 100%;
     padding-top: 52.3%;
-    background: $color-default-black url("../img/gym-play-desktop.webp") no-repeat;
-    background-size: cover;
+    background: $color-default-black url("../img/gym-play-mobile.webp") no-repeat;
   }
 }
 

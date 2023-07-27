@@ -49,14 +49,16 @@
   color: $color-default-white;
   background-color: $color-torch-red;
 
-  @media screen and (max-width: 1199px) {
-    height: 462px;
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    position: relative;
+    height: 100%;
     margin-bottom: 30px;
   }
 
   @media screen and (max-width: 767px) {
     display: block;
     height: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -66,7 +68,7 @@
   height: 100%;
   padding: 41px 45px;
 
-  @media screen and (max-width: 1199px) {
+  @media (min-width: $vp-768) and (max-width: 1199px) {
     padding-right: 40px;
   }
 
@@ -112,6 +114,7 @@
   text-underline-position: under;
   color: $color-default-white;
   margin: auto 0 0 0;
+  width: max-content;
 
   &:disabled {
     opacity: 0.5;
@@ -124,6 +127,23 @@
 
   @include focus {
     text-decoration: none;
+    outline: 1px solid $color-default-white;
+    padding: 0 8px;
+    margin-left: -8px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+    }
+  }
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    position: absolute;
+    bottom: 42px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -193,6 +213,7 @@
   text-decoration: underline;
   text-underline-position: under;
   margin: auto 0 0 0;
+  width: max-content;
 
   &:disabled {
     opacity: 0.5;
@@ -205,6 +226,18 @@
 
   @include focus {
     text-decoration: none;
+    outline: 1px solid $color-default-black;
+    padding: 0 8px;
+    margin-left: -8px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

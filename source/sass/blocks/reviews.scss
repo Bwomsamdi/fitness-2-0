@@ -22,6 +22,7 @@
 
   @media screen and (max-width: 767px) {
     width: auto;
+    max-width: 566px;
     margin: 0 32px;
   }
 }
@@ -53,9 +54,9 @@
   color: $color-default-white;
   background-color: #1c3374;
 
-  @media screen and (max-width: 1166px) {
+  @media (min-width: $vp-768) and (max-width: 1166px) {
     height: max-content;
-    padding: 57px 50px 56px 71px;
+    padding: 58px 55px 56px 65px;
   }
 
   @media screen and (max-width: 767px) {

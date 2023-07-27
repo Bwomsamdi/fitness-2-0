@@ -17,12 +17,13 @@
   color: $color-default-white;
   background-color: $color-default-black;
 
-  @media screen and (max-width: 1199px) {
+  @media (min-width: $vp-768) and (max-width: 1199px) {
     width: 100%;
-    padding: 66px 45px 70px 45px;
+    padding: 66px 45px 66px 45px;
   }
 
   @media screen and (max-width: 767px) {
+    width: 100%;
     padding: 68px 15px;
   }
 }
@@ -36,11 +37,11 @@
   margin: 0;
   padding-bottom: 29px;
 
-  @media screen and (max-width: 1199px) {
+  @media (min-width: $vp-768) and (max-width: 1199px) {
     font-size: 42px;
     font-weight: 700;
-    letter-spacing: 1.26px;
-    padding-bottom: 31px;
+    letter-spacing: 1px;
+    padding-bottom: 32px;
   }
 
   @media screen and (max-width: 767px) {
@@ -122,9 +123,11 @@
   padding-top: 16px;
   letter-spacing: 1.6px;
 
-  @media screen and (max-width: 1199px) {
+  @media (min-width: $vp-768) and (max-width: 1199px) {
     width: 472px;
-    margin-top: 31px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    margin-top: 29px;
   }
 
   @media screen and (max-width: 767px) {
@@ -173,7 +176,7 @@
     font-size: 42px;
     font-weight: 600;
     letter-spacing: 1.26px;
-    padding-bottom: 38px;
+    padding-bottom: 39px;
   }
 
   @media screen and (max-width: 767px) {

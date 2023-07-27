@@ -24,7 +24,7 @@
   gap: 22px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    gap: 15px;
+    gap: 12px;
   }
 
   @media (max-width: 767px) {
@@ -63,8 +63,8 @@
     outline: 1px solid $color-default-white;
   }
 
-  @media screen and (max-width: 1199px) {
-    font-size: 13px;
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    font-size: 14px;
   }
 
   @media screen and (max-width: 767px) {
@@ -79,6 +79,7 @@
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     width: 82px;
+    margin-right: 13px;
     padding-top: 4px;
   }
 
@@ -98,4 +99,5 @@
 .footer__social {
   justify-content: start;
   column-span: all;
+  min-width: 98px;
 }

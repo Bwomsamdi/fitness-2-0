@@ -58,9 +58,9 @@
   }
 }
 
-.hero__text-wrapper p {
+.hero__text-wrapper ul {
   position: absolute;
-  top: 294px;
+  top: 293px;
   left: 19px;
   font-size: 14px;
   font-weight: 400;
@@ -68,6 +68,8 @@
   color: $color-default-white;
   text-align: right;
   margin: 0;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     top: 208px;
@@ -75,8 +77,11 @@
   }
 
   @media (max-width: 767px) {
-    top: 196px;
-    left: 0;
+    top: auto;
+    bottom: 116px;
+    left: auto;
+    right: 178px;
+    width: 113px;
   }
 }
 
@@ -105,9 +110,11 @@
 }
 
 .hero__text-wrapper .btn {
+  width: 234px;
   margin-top: 48px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
+    width: 183px;
     margin-top: 36px;
   }
 

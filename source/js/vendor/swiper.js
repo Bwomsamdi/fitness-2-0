@@ -10182,7 +10182,7 @@ const swiper = () => {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 'auto'
+        slidesPerView: 0.88
       },
       // when window width is >= 768px
       768: {
