@@ -13,6 +13,12 @@
   }
 }
 
+.subscriptions .container {
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    padding: 0 56px;
+  }
+}
+
 .subscriptions::after {
   content: url("../img/weights-desktop.png");
   position: absolute;
@@ -23,7 +29,7 @@
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     content: url("../img/weights-tablet.png");
-    right: 60px;
+    right: 57px;
     bottom: -66px;
   }
 

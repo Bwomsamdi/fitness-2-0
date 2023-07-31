@@ -1,16 +1,11 @@
 .navigation {
   width: 1160px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 25px;
-  z-index: 10;
 
   @media (min-width: $vp-320) and (max-width: 1365px) {
     width: 100%;
-  }
-
-  @media (max-width: 767px) {
-    padding-top: 15px;
   }
 }
 
@@ -30,8 +25,7 @@
 }
 
 .navigation__logo {
-  padding: 8px;
-  padding-top: 14px;
+  padding: 14px 8px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     padding-top: 16px;

@@ -10177,19 +10177,19 @@ const swiper = () => {
   //# sourceMappingURL=swiper-bundle.js.map
 
   const swiperBlock = new Swiper('[data-id="swiper-trainers"]', {
-    loop: true,
-    slidesPerView: 3.8,
+    loop: !0,
     breakpoints: {
-      // when window width is >= 320px
       320: {
-        slidesPerView: 0.88
+          slidesPerView: 1,
+          spaceBetween: 30
       },
-      // when window width is >= 768px
       768: {
-        slidesPerView: 1.9
+          slidesPerView: 2,
+          spaceBetween: 30
       },
       1200: {
-        slidesPerView: 3.87
+          slidesPerView: 4,
+          spaceBetween: 40
       }
     },
     navigation: {

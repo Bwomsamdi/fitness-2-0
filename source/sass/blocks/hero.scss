@@ -1,40 +1,48 @@
 .hero {
   background: conic-gradient(from 145deg at  16% 39%, #003d85 32deg, #b80027 300deg, #003d85 360deg);
-  margin-top: -70px;
-  padding: 63px 0 51px 0;
+  padding: 25px 0 51px 0;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    padding-bottom: 83px;
-    margin-top: -72px;
+    padding-bottom: 81px;
   }
 
   @media (max-width: 767px) {
     width: 100%;
+    padding-top: 15px;
     padding-bottom: 78px;
-    margin-top: -72px;
   }
 }
 
 .hero__wrapper {
   display: flex;
   position: relative;
+  margin-top: -13px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    margin-top: 0;
+  }
 }
 
 .hero__text-wrapper {
   text-align: end;
-  padding: 105px 64px 0 147px;
+  padding: 105px 64px 0 20px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    padding: 78px 33px 0 135px;
+    padding: 68px 30px 0 0;
   }
 
   @media (max-width: 767px) {
     width: 100%;
-    padding: 74px 0 0 0;
+    padding: 76px 0 0 0;
   }
 }
 
-.hero__text-wrapper h1 {
+.hero__text-conteiner {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero__text-conteiner h1 {
   font-family: $ff-alumni;
   color: $color-default-white;
   font-size: 96px;
@@ -52,6 +60,7 @@
     line-height: 86px;
     text-transform: none;
     padding-top: 9px;
+    padding-right: 3px;
   }
 
   @media (max-width: 767px) {
@@ -60,30 +69,28 @@
   }
 }
 
-.hero__text-wrapper ul {
-  position: absolute;
-  top: 293px;
-  left: 19px;
+.hero__text-conteiner ul {
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
   color: $color-default-white;
   text-align: right;
   margin: 0;
+  margin-bottom: 36px;
+  margin-right: 15px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    top: 208px;
-    left: 0;
+    min-width: 113px;
+    margin-bottom: 21px;
+    margin-right: 21px;
   }
 
   @media (max-width: 767px) {
-    top: auto;
-    bottom: 116px;
-    left: auto;
-    right: 178px;
     width: 113px;
+    margin-bottom: 31px;
+    margin-right: -12px;
   }
 }
 
@@ -101,7 +108,7 @@
   @media (min-width: $vp-768) and (max-width: 1199px) {
     font-size: 28px;
     letter-spacing: 1.8px;
-    padding-right: 3px;
+    padding-right: 5px;
   }
 
   @media (max-width: 767px) {
@@ -130,7 +137,8 @@
   margin-top: -11px;
 
   @media (min-width: $vp-768) and (max-width: 1365px) {
-    margin-top: 22px;
+    min-width: 324px;
+    margin-top: 12px;
   }
 
   @media (max-width: 767px) {

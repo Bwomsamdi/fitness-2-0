@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 41px 0 32px 0;
+  padding: 41px 0 40px 0;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     padding: 44px 0;
@@ -11,7 +11,7 @@
     display: block;
     gap: 25px;
     column-count: 2;
-    padding: 46px 0;
+    padding: 45px 0 50px 0;
   }
 }
 
@@ -22,6 +22,7 @@
   margin: 0;
   padding: 0;
   gap: 22px;
+  margin-top: 1px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     gap: 12px;
@@ -92,7 +93,7 @@
 
 .footer__menu {
   @media (max-width: 767px) {
-    padding-bottom: 31px;
+    padding-bottom: 34px;
   }
 }
 

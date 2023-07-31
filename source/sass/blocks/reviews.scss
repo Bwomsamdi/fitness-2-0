@@ -1,13 +1,13 @@
 .reviews {
   text-align: center;
-  padding: 142px 0 119px 0;
+  padding: 143px 0 119px 0;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     padding: 105px 0 100px 0;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 46px 0 70px 0;
+    padding: 71px 32px 70px 32px;
   }
 }
 
@@ -27,7 +27,7 @@
   @media screen and (max-width: 767px) {
     width: auto;
     max-width: 566px;
-    margin: 0 32px;
+    margin: 0 auto;
   }
 }
 
@@ -57,7 +57,7 @@
   padding: 58px 61px 56px 61px;
   color: $color-default-white;
   background-color: #1c3374;
-  margin: auto;
+  margin: 0 auto;
 
   @media (min-width: $vp-768) and (max-width: 1166px) {
     height: max-content;

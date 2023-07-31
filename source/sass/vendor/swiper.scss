@@ -39,17 +39,8 @@
   height: 100%;
   z-index: 1;
   display: flex;
-  column-gap: 40px;
   transition-property: transform;
   box-sizing: content-box;
-
-  @media screen and (max-width: 1199px) {
-    column-gap: 30px;
-  }
-
-  @media screen and (max-width: 767px) {
-    //column-gap: 0;
-  }
 }
 .swiper-android .swiper-slide,
 .swiper-wrapper {
@@ -73,6 +64,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-right: 40px;
 
       @media screen and (max-width: 1199px) {
         max-width: 268px;
@@ -81,7 +73,6 @@
 
       @media screen and (max-width: 767px) {
         max-width: 226px;
-        width: 226px;
         height: 100%;
       }
 }

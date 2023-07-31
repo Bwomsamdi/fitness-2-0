@@ -110,6 +110,7 @@
 
   &--questions {
     width: 100%;
+    margin-bottom: 0;
 
     @media (max-width: 767px) {
       margin-bottom: 0;
@@ -150,6 +151,10 @@
     border-image: linear-gradient(120deg, #d10a42, #00359f) 30;
     border-width: 7px;
     border-style: solid;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    padding: 34px 0 40px 0;
   }
 
   @media (min-width: 768px) and (max-width: 1199px) {
