@@ -47,7 +47,7 @@
   }
 }
 
-.navigation__phone {
+a.navigation__phone {
   font-family: $ff-alumni;
   color: $color-default-white;
   font-size: 26px;
@@ -56,6 +56,7 @@
   letter-spacing: 0.78px;
   padding: 8px;
   margin-right: -8px;
+  margin-left: 10px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     font-size: 24px;
