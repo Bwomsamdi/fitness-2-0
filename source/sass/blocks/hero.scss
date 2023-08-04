@@ -40,6 +40,10 @@
 .hero__text-conteiner {
   display: flex;
   align-items: flex-end;
+
+  @media (max-width: 767px) {
+    justify-content: flex-end;
+  }
 }
 
 .hero__text-conteiner h1 {

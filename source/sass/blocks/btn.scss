@@ -21,12 +21,18 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
+  &:hover {
     color: #103aae;
     background-color: $color-default-white;
   }
 
-  @include active {
+  &:focus {
+    color: #103aae;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
     color: $color-default-black;
   }
 
@@ -45,13 +51,21 @@
     border: 2px solid $color-default-black;
     padding: 19px 36px;
 
-    @include hover-focus {
+    &:hover {
       color: $color-default-white;
       border: none;
+      padding-top: 20px;
       background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     }
 
-    @include active {
+    &:focus {
+      color: $color-default-white;
+      border: none;
+      padding-top: 20px;
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    }
+
+    &:active {
       color: rgba(255, 255, 255, 0.7);
     }
   }

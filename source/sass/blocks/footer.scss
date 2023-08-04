@@ -56,12 +56,16 @@
     pointer-events: none;
   }
 
-  @include hover {
+  &:hover {
     border-bottom: 1px solid $color-default-white;
   }
 
-  @include focus {
+  &:focus {
     outline: 1px solid $color-default-white;
+  }
+
+  &:active {
+    border-bottom: none;
   }
 
   @media (min-width: $vp-768) and (max-width: 1199px) {

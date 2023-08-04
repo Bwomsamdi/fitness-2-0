@@ -26,14 +26,14 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
+  &:hover {
     background-color: #103aae;
     fill: $color-default-white;
   }
 
-  @include active {
-    background-color: $color-default-black;
+  &:active {
     fill: $color-default-white;
+    background-color: #102654;
   }
 }
 

@@ -113,7 +113,7 @@
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     justify-content: space-between;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 323px);
     grid-template-rows: repeat(3, auto);
     column-gap: 29px;
     row-gap: 42px;
