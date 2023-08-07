@@ -39,7 +39,7 @@
 
 .hero__text-conteiner {
   display: flex;
-  align-items: flex-end;
+  //align-items: flex-end;
 
   @media (max-width: 767px) {
     justify-content: flex-end;
@@ -80,20 +80,23 @@
   color: $color-default-white;
   text-align: right;
   margin: 0;
-  margin-bottom: 36px;
+  margin-top: 137px;
+  //margin-bottom: 36px;
   margin-right: 15px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     min-width: 113px;
-    margin-bottom: 21px;
+    margin-top: 97px;
+    //margin-bottom: 21px;
     margin-right: 21px;
   }
 
   @media (max-width: 767px) {
     width: 113px;
-    margin-bottom: 31px;
+    margin-top: 93px;
+    //margin-bottom: 31px;
     margin-right: -12px;
   }
 }

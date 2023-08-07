@@ -244,12 +244,12 @@
   top: 5px;
   right: -62px;
   width: 1px;
-  height: 102px;
+  height: calc(100% - 18px);
   background-color: #74819c;
 
   @media screen and (max-width: 1199px) {
     right: -50px;
-    height: 129px;
+    height: calc(100% - 30px);
   }
 
   @media screen and (max-width: 767px) {

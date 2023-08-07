@@ -105,4 +105,9 @@
   justify-content: start;
   column-span: all;
   min-width: 98px;
+  max-width: 109px;
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
 }

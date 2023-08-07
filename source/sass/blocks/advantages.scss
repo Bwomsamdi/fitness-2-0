@@ -93,6 +93,17 @@
   font-size: 16px;
   line-height: 140%;
   margin: 0;
+
+  @media screen and (max-width: 767px) {
+    width: 227px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__text-wrapper br:nth-of-type(1) {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .advantages__wrapper {

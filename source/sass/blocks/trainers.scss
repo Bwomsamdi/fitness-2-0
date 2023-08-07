@@ -53,10 +53,16 @@
   position: absolute;
   width: 260px;
   height: 100%;
-  padding: 74px 46px 57px 71px;
+  padding: 57px 46px 57px 71px;
   color: $color-default-white;
   background-color: rgba(16, 38, 84, 0.89);
   overflow-y: auto;
+
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    width: 100%;
+    height: 100%;
+    padding: 32px 26px 47px 51px;
+  }
 
   @media screen and (max-width: 1199px) {
     width: 268px;
@@ -65,7 +71,7 @@
 
   @media screen and (max-width: 767px) {
     width: 226px;
-    padding: 64px 30px 64px 50px;
+    padding: 46px 30px 64px 50px;
   }
 }
 
@@ -73,6 +79,10 @@
   margin: 0;
   padding: 0;
   margin-top: 31px;
+
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    margin-top: 15px;
+  }
 }
 
 .trainers__description-wrapper span {
@@ -80,6 +90,11 @@
   font-weight: 400;
   color: #b6bdcc;
   margin-left: -24px;
+  //margin-top: -10px;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: -30px;
+  }
 
   @media screen and (max-width: 767px) {
     margin-left: -21px;
@@ -108,9 +123,14 @@
   margin-bottom: 24px;
 }
 
-.trainers__slide:hover h3 {
-  top: 53px;
-  z-index: 10;
+.trainers__slide:hover > h3 {
+  display: none;
+  //top: 53px;
+  //z-index: 10;
+
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    top: 43px;
+  }
 
   @media screen and (max-width: 767px) {
     top: 43px;
@@ -130,5 +150,20 @@
   @media screen and (max-width: 767px) {
     width: 226px;
     height: 274px;
+  }
+}
+
+.trainers__description-wrapper h3 {
+  position: static;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-left: -26px;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: -32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: -22px;
   }
 }

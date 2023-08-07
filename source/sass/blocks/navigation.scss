@@ -13,13 +13,17 @@
   display: block;
   margin-left: -8px;
 
-  @include hover-focus {
+  &:hover {
     opacity: 0.8;
   }
 
-  @include focus {
+  &:focus {
     outline: 1px solid $color-default-white;
     border-radius: 0;
+    opacity: 1;
+  }
+
+  &:active {
     opacity: 1;
   }
 }
